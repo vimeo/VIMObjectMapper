@@ -15,13 +15,11 @@ Pod::Spec.new do |s|
   s.author           = { "Alfie Hanssen" => "" }
   s.source           = { 
     :git => "https://github.com/FastSociety/VIMObjectMapper.git", 
-    :tag => s.version.to_s,
-    :submodules => true,
-    :branch => 'cocoapod'
+    :tag => s.version.to_s  
   }
   s.social_media_url = 'https://twitter.com/vimeo'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.public_header_files = '*.h'
