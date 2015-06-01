@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.summary      = "An automatic JSON to model object converter."
 
   s.description  = <<-DESC
+  VIMObjectMapper automatically converts JSON into model objects. Check out the Github README for details.
                    DESC
 
   s.homepage     = "https://github.com/vimeo/VIMObjectMapper"
@@ -72,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/vimeo/VIMObjectMapper.git", :tag => "v1.0.1" }
+  s.source       = { :git => "https://github.com/vimeo/VIMObjectMapper.git", :branch => "cocoapod" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
