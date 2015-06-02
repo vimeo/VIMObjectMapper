@@ -2,6 +2,17 @@
 
 `VIMObjectMapper` converts JSON into model objects.
 
+## Setup
+
+Add `VIMObjectMapper` to your project. Do this by including it as a git submodule or by using cocoapods:
+
+```Ruby
+# Add this to your podfile
+target 'MyTarget' do
+	pod 'VIMObjectMapper', '5.4.2'
+end
+```
+
 ## Usage
 
 ### Subclass VIMModelObject
