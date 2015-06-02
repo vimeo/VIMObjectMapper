@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "7.0"
 
-  s.source       = { :git => "https://github.com/vimeo/VIMObjectMapper.git", :branch => "cocoapod" }
+  s.source       = { :git => "https://github.com/vimeo/VIMObjectMapper.git", :tag => "5.4.2" }
 
   s.source_files  = "VIMObjectMapper/*.{h,m}"
   s.exclude_files = "VIMObjectMapper/Exclude"
