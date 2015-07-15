@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VIMObjectMapper"
-  s.version      = "5.4.2"
+  s.version      = "5.5"
   s.summary      = "An automatic JSON to model object converter."
   s.homepage     = "https://github.com/vimeo/VIMObjectMapper"
 
