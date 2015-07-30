@@ -37,18 +37,11 @@ static NSUInteger const VIMModelObjectVersion = 3;
 	return VIMModelObjectVersion;
 }
 
-- (NSString *)objectID
-{
-    if(_objectID == nil || _objectID.length == 0)
-        NSLog(@"%@: Accessed undefined objectID", NSStringFromClass(self.class));
-	
-    return _objectID;
-}
-
 + (NSDateFormatter *)dateFormatter
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZ"];
+    
     return dateFormatter;
 }
 
@@ -103,8 +96,6 @@ static NSUInteger const VIMModelObjectVersion = 3;
 		return nil;
 	}
 	
-    self.objectID = [aDecoder decodeObjectForKey:@"objectID"];
-
 	NSSet *propertyKeys = self.class.propertyKeys;
 	NSMutableDictionary *KVDictionary = [[NSMutableDictionary alloc] initWithCapacity:propertyKeys.count];
 	
@@ -135,9 +126,6 @@ static NSUInteger const VIMModelObjectVersion = 3;
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
 	[aCoder encodeObject:@(self.class.modelVersion) forKey:@"modelVersion"];
-
-    if(_objectID && _objectID.length > 0)
-        [aCoder encodeObject:self.objectID forKey:@"objectID"];
 	
 	[self.keyValueDictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
 

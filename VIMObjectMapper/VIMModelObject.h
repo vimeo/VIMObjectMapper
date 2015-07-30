@@ -28,7 +28,6 @@
 
 @interface VIMModelObject : NSObject <NSCopying, NSSecureCoding, VIMMappable>
 
-@property (nonatomic, assign) int sortOrder;
 @property (nonatomic, copy) NSString *objectID;
 
 + (NSUInteger)modelVersion;
