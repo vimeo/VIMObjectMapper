@@ -24,6 +24,7 @@
 //  THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
 #import "VIMMappable.h"
 
 @interface VIMModelObject : NSObject <NSCopying, NSSecureCoding, VIMMappable>
