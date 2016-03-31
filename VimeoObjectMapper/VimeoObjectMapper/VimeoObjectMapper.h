@@ -1,9 +1,9 @@
 //
-//  VIMObjectMapper.h
-//  VIMNetworking
+//  VimeoObjectMapper.h
+//  VIMObjectMapper
 //
-//  Created by Kashif Mohammad on 3/25/13.
-//  Copyright (c) 2014-2015 Vimeo (https://vimeo.com)
+//  Created by Alfred Hanssen on 3/30/16.
+//  Copyright © 2016 Vimeo. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,14 +24,16 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@class VIMObjectMapping;
+//! Project version number for VimeoObjectMapper.
+FOUNDATION_EXPORT double VimeoObjectMapperVersionNumber;
 
-@interface VIMObjectMapper : NSObject
+//! Project version string for VimeoObjectMapper.
+FOUNDATION_EXPORT const unsigned char VimeoObjectMapperVersionString[];
 
-- (void)addMappingClass:(Class)mappingClass forKeypath:(NSString *)keypath;
+// In this header, you should import all the public headers of your framework using statements like #import <VimeoObjectMapper/PublicHeader.h>
 
-- (id)applyMappingToJSON:(id)JSON;
-
-@end
+#import <VimeoObjectMapper/VIMMappable.h>
+#import <VimeoObjectMapper/VIMModelObject.h>
+#import <VimeoObjectMapper/VIMObjectMapper.h>

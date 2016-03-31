@@ -1,9 +1,9 @@
 //
 //  VIMMappable.h
-//  VIMNetworking
+//  VIMObjectMapper
 //
 //  Created by Kashif Mohammad on 3/25/13.
-//  Copyright (c) 2014-2015 Vimeo (https://vimeo.com)
+//  Copyright (c) 2014-2016 Vimeo (https://vimeo.com)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @protocol VIMMappable <NSObject>
 
