@@ -9,7 +9,7 @@ Add `VIMObjectMapper` to your project. Do this by including it as a git submodul
 ```Ruby
 # Add this to your podfile
 target 'MyTarget' do
-	pod 'VIMObjectMapper', '5.4.2'
+    pod 'VIMObjectMapper', '{CURRENT_POD_VERSION}'
 end
 ```
 
@@ -107,12 +107,14 @@ VIMUser *user = [mapper applyMappingToJSON:JSON];
 
 ## License
 
-`VIMObjectMapper` is available under the MIT license. See the LICENSE file for more info.
+`VIMObjectMapper` is available under the MIT license. See the [LICENSE] file for more info.
 
 ## Questions?
 
-Tweet at us here: @vimeoapi
+Tweet at us here: [@vimeoapi](https://twitter.com/vimeoapi).
 
-Post on [Stackoverflow](http://stackoverflow.com/questions/tagged/vimeo-ios) with the tag `vimeo-ios`
+Post on [Stackoverflow](http://stackoverflow.com/questions/tagged/vimeo-ios) with the tag `vimeo-ios`.
 
-Get in touch [here](Vimeo.com/help/contact)
+Get in touch [here](https://vimeo.com/help/contact).
+
+Interested in working at Vimeo? We're [hiring](https://vimeo.com/jobs)!
