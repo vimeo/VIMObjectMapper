@@ -9,25 +9,25 @@
 Pod::Spec.new do |s|
 
   s.name         = "VIMObjectMapper"
-  s.version      = "6.0.0"
+  s.version      = "6.0.1"
   s.summary      = "An automatic JSON to model object converter."
   s.homepage     = "https://github.com/vimeo/VIMObjectMapper"
-
-  s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE.md" }
 
   s.author             = "Kashif Mohammad"
-  s.social_media_url   = "http://twitter.com/vimeo"
+  s.social_media_url   = "http://twitter.com/vimeoapi"
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
   s.tvos.deployment_target = '9.0'
 
   s.source       = { :git => "https://github.com/vimeo/VIMObjectMapper.git", :tag => s.version.to_s }
-
-  s.source_files  = "VIMObjectMapper/**/*.{h,m}"
-
-  s.framework  = "Foundation"
+  s.source_files  = "VimeoObjectMapper/VimeoObjectMapper/Source/*.{h,m}"
 
   s.requires_arc = true
+
+  s.ios.frameworks  = "Foundation"
+  s.osx.frameworks  = "Foundation"
+  s.tvos.frameworks  = "Foundation"
 
 end
