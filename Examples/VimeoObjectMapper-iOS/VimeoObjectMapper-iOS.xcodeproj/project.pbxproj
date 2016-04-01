@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF8720F11CACB33E004C752C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8720F01CACB33E004C752C /* AppDelegate.swift */; };
+		AF8720F31CACB33E004C752C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8720F21CACB33E004C752C /* ViewController.swift */; };
+		AF8720F61CACB33E004C752C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8720F41CACB33E004C752C /* Main.storyboard */; };
+		AF8720F81CACB33E004C752C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8720F71CACB33E004C752C /* Assets.xcassets */; };
+		AF8720FB1CACB33E004C752C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8720F91CACB33E004C752C /* LaunchScreen.storyboard */; };
+		AF8721061CACB33E004C752C /* VimeoObjectMapper_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8721051CACB33E004C752C /* VimeoObjectMapper_iOSTests.swift */; };
+		AF8721111CACB33E004C752C /* VimeoObjectMapper_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8721101CACB33E004C752C /* VimeoObjectMapper_iOSUITests.swift */; };
+		AF8721211CACB37B004C752C /* VimeoObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8721201CACB37B004C752C /* VimeoObjectMapper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF8721021CACB33E004C752C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF8720E51CACB33E004C752C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF8720EC1CACB33E004C752C;
+			remoteInfo = "VimeoObjectMapper-iOS";
+		};
+		AF87210D1CACB33E004C752C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF8720E51CACB33E004C752C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF8720EC1CACB33E004C752C;
+			remoteInfo = "VimeoObjectMapper-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF8720ED1CACB33E004C752C /* VimeoObjectMapper-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VimeoObjectMapper-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8720F01CACB33E004C752C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF8720F21CACB33E004C752C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF8720F51CACB33E004C752C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF8720F71CACB33E004C752C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF8720FA1CACB33E004C752C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF8720FC1CACB33E004C752C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8721011CACB33E004C752C /* VimeoObjectMapper-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VimeoObjectMapper-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8721051CACB33E004C752C /* VimeoObjectMapper_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoObjectMapper_iOSTests.swift; sourceTree = "<group>"; };
+		AF8721071CACB33E004C752C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF87210C1CACB33E004C752C /* VimeoObjectMapper-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VimeoObjectMapper-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8721101CACB33E004C752C /* VimeoObjectMapper_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoObjectMapper_iOSUITests.swift; sourceTree = "<group>"; };
+		AF8721121CACB33E004C752C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8721201CACB37B004C752C /* VimeoObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VimeoObjectMapper.framework; path = "../../VimeoObjectMapper/build/Debug-iphoneos/VimeoObjectMapper.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF8720EA1CACB33E004C752C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8721211CACB37B004C752C /* VimeoObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8720FE1CACB33E004C752C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8721091CACB33E004C752C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF8720E41CACB33E004C752C = {
+			isa = PBXGroup;
+			children = (
+				AF8720EF1CACB33E004C752C /* VimeoObjectMapper-iOS */,
+				AF8721041CACB33E004C752C /* VimeoObjectMapper-iOSTests */,
+				AF87210F1CACB33E004C752C /* VimeoObjectMapper-iOSUITests */,
+				AF8720EE1CACB33E004C752C /* Products */,
+				AF8721221CACB384004C752C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF8720EE1CACB33E004C752C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF8720ED1CACB33E004C752C /* VimeoObjectMapper-iOS.app */,
+				AF8721011CACB33E004C752C /* VimeoObjectMapper-iOSTests.xctest */,
+				AF87210C1CACB33E004C752C /* VimeoObjectMapper-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF8720EF1CACB33E004C752C /* VimeoObjectMapper-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF8720F01CACB33E004C752C /* AppDelegate.swift */,
+				AF8720F21CACB33E004C752C /* ViewController.swift */,
+				AF8720F41CACB33E004C752C /* Main.storyboard */,
+				AF8720F71CACB33E004C752C /* Assets.xcassets */,
+				AF8720F91CACB33E004C752C /* LaunchScreen.storyboard */,
+				AF8720FC1CACB33E004C752C /* Info.plist */,
+			);
+			path = "VimeoObjectMapper-iOS";
+			sourceTree = "<group>";
+		};
+		AF8721041CACB33E004C752C /* VimeoObjectMapper-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF8721051CACB33E004C752C /* VimeoObjectMapper_iOSTests.swift */,
+				AF8721071CACB33E004C752C /* Info.plist */,
+			);
+			path = "VimeoObjectMapper-iOSTests";
+			sourceTree = "<group>";
+		};
+		AF87210F1CACB33E004C752C /* VimeoObjectMapper-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF8721101CACB33E004C752C /* VimeoObjectMapper_iOSUITests.swift */,
+				AF8721121CACB33E004C752C /* Info.plist */,
+			);
+			path = "VimeoObjectMapper-iOSUITests";
+			sourceTree = "<group>";
+		};
+		AF8721221CACB384004C752C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF8721201CACB37B004C752C /* VimeoObjectMapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF8720EC1CACB33E004C752C /* VimeoObjectMapper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8721151CACB33E004C752C /* Build configuration list for PBXNativeTarget "VimeoObjectMapper-iOS" */;
+			buildPhases = (
+				AF8720E91CACB33E004C752C /* Sources */,
+				AF8720EA1CACB33E004C752C /* Frameworks */,
+				AF8720EB1CACB33E004C752C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VimeoObjectMapper-iOS";
+			productName = "VimeoObjectMapper-iOS";
+			productReference = AF8720ED1CACB33E004C752C /* VimeoObjectMapper-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF8721001CACB33E004C752C /* VimeoObjectMapper-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8721181CACB33E004C752C /* Build configuration list for PBXNativeTarget "VimeoObjectMapper-iOSTests" */;
+			buildPhases = (
+				AF8720FD1CACB33E004C752C /* Sources */,
+				AF8720FE1CACB33E004C752C /* Frameworks */,
+				AF8720FF1CACB33E004C752C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF8721031CACB33E004C752C /* PBXTargetDependency */,
+			);
+			name = "VimeoObjectMapper-iOSTests";
+			productName = "VimeoObjectMapper-iOSTests";
+			productReference = AF8721011CACB33E004C752C /* VimeoObjectMapper-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF87210B1CACB33E004C752C /* VimeoObjectMapper-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF87211B1CACB33E004C752C /* Build configuration list for PBXNativeTarget "VimeoObjectMapper-iOSUITests" */;
+			buildPhases = (
+				AF8721081CACB33E004C752C /* Sources */,
+				AF8721091CACB33E004C752C /* Frameworks */,
+				AF87210A1CACB33E004C752C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF87210E1CACB33E004C752C /* PBXTargetDependency */,
+			);
+			name = "VimeoObjectMapper-iOSUITests";
+			productName = "VimeoObjectMapper-iOSUITests";
+			productReference = AF87210C1CACB33E004C752C /* VimeoObjectMapper-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF8720E51CACB33E004C752C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Vimeo;
+				TargetAttributes = {
+					AF8720EC1CACB33E004C752C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AF8721001CACB33E004C752C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AF8720EC1CACB33E004C752C;
+					};
+					AF87210B1CACB33E004C752C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AF8720EC1CACB33E004C752C;
+					};
+				};
+			};
+			buildConfigurationList = AF8720E81CACB33E004C752C /* Build configuration list for PBXProject "VimeoObjectMapper-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF8720E41CACB33E004C752C;
+			productRefGroup = AF8720EE1CACB33E004C752C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF8720EC1CACB33E004C752C /* VimeoObjectMapper-iOS */,
+				AF8721001CACB33E004C752C /* VimeoObjectMapper-iOSTests */,
+				AF87210B1CACB33E004C752C /* VimeoObjectMapper-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF8720EB1CACB33E004C752C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8720FB1CACB33E004C752C /* LaunchScreen.storyboard in Resources */,
+				AF8720F81CACB33E004C752C /* Assets.xcassets in Resources */,
+				AF8720F61CACB33E004C752C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8720FF1CACB33E004C752C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF87210A1CACB33E004C752C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF8720E91CACB33E004C752C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8720F31CACB33E004C752C /* ViewController.swift in Sources */,
+				AF8720F11CACB33E004C752C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8720FD1CACB33E004C752C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8721061CACB33E004C752C /* VimeoObjectMapper_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8721081CACB33E004C752C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8721111CACB33E004C752C /* VimeoObjectMapper_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF8721031CACB33E004C752C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF8720EC1CACB33E004C752C /* VimeoObjectMapper-iOS */;
+			targetProxy = AF8721021CACB33E004C752C /* PBXContainerItemProxy */;
+		};
+		AF87210E1CACB33E004C752C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF8720EC1CACB33E004C752C /* VimeoObjectMapper-iOS */;
+			targetProxy = AF87210D1CACB33E004C752C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF8720F41CACB33E004C752C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF8720F51CACB33E004C752C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF8720F91CACB33E004C752C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF8720FA1CACB33E004C752C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF8721131CACB33E004C752C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF8721141CACB33E004C752C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF8721161CACB33E004C752C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "VimeoObjectMapper-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.VimeoObjectMapper-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF8721171CACB33E004C752C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "VimeoObjectMapper-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.VimeoObjectMapper-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF8721191CACB33E004C752C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "VimeoObjectMapper-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.VimeoObjectMapper-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VimeoObjectMapper-iOS.app/VimeoObjectMapper-iOS";
+			};
+			name = Debug;
+		};
+		AF87211A1CACB33E004C752C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "VimeoObjectMapper-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.VimeoObjectMapper-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VimeoObjectMapper-iOS.app/VimeoObjectMapper-iOS";
+			};
+			name = Release;
+		};
+		AF87211C1CACB33E004C752C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "VimeoObjectMapper-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.VimeoObjectMapper-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "VimeoObjectMapper-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AF87211D1CACB33E004C752C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "VimeoObjectMapper-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.VimeoObjectMapper-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "VimeoObjectMapper-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF8720E81CACB33E004C752C /* Build configuration list for PBXProject "VimeoObjectMapper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8721131CACB33E004C752C /* Debug */,
+				AF8721141CACB33E004C752C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8721151CACB33E004C752C /* Build configuration list for PBXNativeTarget "VimeoObjectMapper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8721161CACB33E004C752C /* Debug */,
+				AF8721171CACB33E004C752C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF8721181CACB33E004C752C /* Build configuration list for PBXNativeTarget "VimeoObjectMapper-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8721191CACB33E004C752C /* Debug */,
+				AF87211A1CACB33E004C752C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF87211B1CACB33E004C752C /* Build configuration list for PBXNativeTarget "VimeoObjectMapper-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF87211C1CACB33E004C752C /* Debug */,
+				AF87211D1CACB33E004C752C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF8720E51CACB33E004C752C /* Project object */;
+}

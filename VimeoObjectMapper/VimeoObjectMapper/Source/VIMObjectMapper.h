@@ -1,9 +1,9 @@
 //
-//  VIMModelObject.h
-//  VIMNetworking
+//  VIMObjectMapper.h
+//  VIMObjectMapper
 //
-//  Created by Kashif Mohammad on 6/5/13.
-//  Copyright (c) 2014-2015 Vimeo (https://vimeo.com)
+//  Created by Kashif Mohammad on 3/25/13.
+//  Copyright (c) 2014-2016 Vimeo (https://vimeo.com)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,21 +24,14 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-#import "VIMMappable.h"
+@import Foundation;
 
-@interface VIMModelObject : NSObject <NSCopying, NSSecureCoding, VIMMappable>
+@class VIMObjectMapping;
 
-@property (nonatomic, copy) NSString *objectID;
+@interface VIMObjectMapper : NSObject
 
-+ (NSUInteger)modelVersion;
-+ (NSDateFormatter *)dateFormatter;
-+ (NSSet *)propertyKeys;
+- (void)addMappingClass:(Class)mappingClass forKeypath:(NSString *)keypath;
 
-- (instancetype)initWithKeyValueDictionary:(NSDictionary *)dictionary;
-
-- (NSDictionary *)keyValueDictionary;
-
-- (void)upgradeFromModelVersion:(NSUInteger)fromVersion toModelVersion:(NSUInteger)toVersion;
+- (id)applyMappingToJSON:(id)JSON;
 
 @end

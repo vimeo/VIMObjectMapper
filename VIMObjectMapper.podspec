@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/vimeo/VIMObjectMapper.git", :tag => s.version.to_s }
 
-  s.source_files  = "VIMObjectMapper/*.{h,m}"
-  s.exclude_files = "VIMObjectMapper/Exclude"
+  s.source_files  = "VIMObjectMapper/**/*.{h,m}"
 
   s.framework  = "Foundation"
 

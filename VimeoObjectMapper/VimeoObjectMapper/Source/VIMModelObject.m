@@ -1,9 +1,9 @@
 //
 //  VIMModelObject.m
-//  VIMNetworking
+//  VIMObjectMapper
 //
 //  Created by Kashif Mohammad on 6/5/13.
-//  Copyright (c) 2014-2015 Vimeo (https://vimeo.com)
+//  Copyright (c) 2014-2016 Vimeo (https://vimeo.com)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -51,19 +51,22 @@ static NSUInteger const VIMModelObjectVersion = 3;
 - (instancetype)initWithKeyValueDictionary:(NSDictionary *)dictionary
 {
 	self = [self init];
-	if (self == nil) return nil;
-    
-    NSAssert([dictionary isKindOfClass:[NSDictionary class]], @"Can't initilize model object with invalid dictionary");
-
-	for (NSString *key in dictionary)
-	{
-		id value = [dictionary objectForKey:key];
-		
-		if ([value isEqual:NSNull.null] || [value isKindOfClass:[NSNull class]])
-			value = nil;
-		
-		[self setValue:value forKey:key];
-	}
+    if (self)
+    {
+        NSAssert([dictionary isKindOfClass:[NSDictionary class]], @"Can't initilize model object with invalid dictionary");
+        
+        for (NSString *key in dictionary)
+        {
+            id value = [dictionary objectForKey:key];
+            
+            if ([value isEqual:NSNull.null] || [value isKindOfClass:[NSNull class]])
+            {
+                value = nil;
+            }
+            
+            [self setValue:value forKey:key];
+        }
+    }
 	
 	return self;
 }
@@ -87,14 +90,15 @@ static NSUInteger const VIMModelObjectVersion = 3;
     return YES;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
 	NSNumber *modelVersion = [aDecoder decodeObjectForKey:@"modelVersion"];
 
-	if(modelVersion.unsignedIntegerValue > self.class.modelVersion)
+	if (modelVersion.unsignedIntegerValue > self.class.modelVersion)
 	{
 		NSLog(@"%@:initWithCoder: Could not unarchive %@. Unsupported model version %ld", NSStringFromClass(self.class), self.class, (unsigned long)modelVersion.unsignedIntegerValue);
-		return nil;
+		
+        return nil;
 	}
 	
 	NSSet *propertyKeys = self.class.propertyKeys;
@@ -103,7 +107,11 @@ static NSUInteger const VIMModelObjectVersion = 3;
 	for (NSString *key in propertyKeys)
 	{
 		id value = [aDecoder decodeObjectForKey:key];
-		if (value == nil) continue;
+		
+        if (value == nil)
+        {
+            continue;
+        }
 		
 		KVDictionary[key] = value;
 	}
@@ -130,8 +138,10 @@ static NSUInteger const VIMModelObjectVersion = 3;
 	
 	[self.keyValueDictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
 
-        if([value respondsToSelector:@selector(encodeWithCoder:)])
+        if ([value respondsToSelector:@selector(encodeWithCoder:)])
+        {
             [aCoder encodeObject:value forKey:key];
+        }
         
 	}];
 }
@@ -141,34 +151,39 @@ static NSUInteger const VIMModelObjectVersion = 3;
     // Override in subclasses
 }
 
-#pragma mark - NSCopying methods
+#pragma mark - NSCopying
 
-- (id)copyWithZone:(NSZone *)zone
+- (instancetype)copyWithZone:(NSZone *)zone
 {
 	return [[self.class allocWithZone:zone] initWithKeyValueDictionary:self.keyValueDictionary];
 }
 
-#pragma mark - Class Property enumeration
+#pragma mark - Class Property Enumeration
 
 + (void)enumeratePropertiesUsingBlock:(void (^)(objc_property_t property, BOOL *stop))block
 {
 	Class selfClass = self;
 	BOOL stop = NO;
 	
-	while(!stop && ![selfClass isEqual:VIMModelObject.class])
+	while (!stop && ![selfClass isEqual:VIMModelObject.class])
 	{
 		unsigned count = 0;
 		objc_property_t *properties = class_copyPropertyList(selfClass, &count);
 		
 		selfClass = selfClass.superclass;
-		if(properties == NULL) continue;
 		
-		for(unsigned i = 0; i < count; i++)
+        if (properties == NULL)
+        {
+            continue;
+        }
+		
+		for (unsigned i = 0; i < count; i++)
 		{
 			block(properties[i], &stop);
-			if (stop)
+			
+            if (stop)
 			{
-                if(properties)
+                if (properties)
                 {
                     free(properties);
                     properties = NULL;
@@ -178,7 +193,7 @@ static NSUInteger const VIMModelObjectVersion = 3;
 			}
 		}
 
-        if(properties)
+        if (properties)
         {
             free(properties);
             properties = NULL;
@@ -189,8 +204,12 @@ static NSUInteger const VIMModelObjectVersion = 3;
 + (NSSet *)propertyKeys
 {
 	NSSet *cachedKeys = objc_getAssociatedObject(self, @"VIMModelObject_propertyKeys");
-	if (cachedKeys != nil) return cachedKeys;
 	
+    if (cachedKeys != nil)
+    {
+        return cachedKeys;
+    }
+    
 	NSMutableSet *keys = [NSMutableSet set];
 	
 	[self enumeratePropertiesUsingBlock:^(objc_property_t property, BOOL *stop) {
