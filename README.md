@@ -1,3 +1,5 @@
+###### Attention: This tool will be merged into [VimeoNetworking](https://github.com/vimeo/VimeoNetworking) shortly.  Please refer to that repository for future development.
+
 # VIMObjectMapper
 
 `VIMObjectMapper` converts JSON into model objects.
