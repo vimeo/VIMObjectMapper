@@ -1,3 +1,5 @@
+⚠️⚠️⚠️ This library has been deprecated and will be removed in the future. ⚠️⚠️⚠️
+
 ###### Attention: This tool will be merged into [VimeoNetworking](https://github.com/vimeo/VimeoNetworking) shortly.  Please refer to that repository for future development.  If you're only interested in object mapping, you can use the `Models` subspec of the VimeoNetworking CocoaPod
 
 # VIMObjectMapper
